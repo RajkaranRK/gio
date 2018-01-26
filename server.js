@@ -13,6 +13,7 @@ app.use((req,res,next)=>{
     
    // next();
 });
+var port = process.env.PORT||3000;
 
 app.use('/user/:userId',(req,res,next)=>{
 
@@ -64,6 +65,6 @@ app.get('/help',(req,res)=>{
     });
 });
 
-app.listen(3000,()=>{
-    console.log('App is listening at port 3000');
+app.listen(PORT,()=>{
+    console.log('App is listening at port ',PORT);
 });
