@@ -65,6 +65,6 @@ app.get('/help',(req,res)=>{
     });
 });
 
-app.listen(PORT,()=>{
-    console.log('App is listening at port ',PORT);
+app.listen(port,()=>{
+    console.log('App is listening at port ',port);
 });
