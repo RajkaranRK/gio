@@ -8,10 +8,7 @@ app.use(express.static(__dirname+'/public/'));
 app.use((req,res,next)=>{
     var now = new Date().toDateString();
     var log = `${now} : URL: ${req.url} Method:${req.method}`;
-    console.log(log);  
-    console.log(res.render('maintain.hbs'));
-    
-   // next();
+     next();
 });
 var port = process.env.PORT||3000;
 
